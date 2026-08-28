@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#faf9f6" />
+  <title>ASTER Clean ✦ quiet days</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='24' font-size='22'%3E%E2%9C%A6%3C/text%3E%3C/svg%3E" />
+  <script>
+    // Clean flag must exist before the app boots.
+    window.__ASTER_CLEAN__ = true;
+    // Apply cached theme instantly (before CSS paints) to avoid a flash.
+    (function () {
+      try {
+        var t = JSON.parse(localStorage.getItem("aster-theme") || "{}");
+        var theme = t.theme || "auto";
+        if (theme === "auto")
+          theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.dataset.accent = t.accent || "sage";
+        document.documentElement.dataset.clean = "1";
+        document.documentElement.dataset.bg = "plain";
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="./styles/base.css" />
+  <link rel="stylesheet" href="./styles/components.css" />
+  <link rel="stylesheet" href="./styles/views.css" />
+</head>
+<body>
+  <div id="app" class="app"></div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

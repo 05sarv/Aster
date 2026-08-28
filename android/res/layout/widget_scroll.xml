@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- compact 2x1 list widget: a scrollable list of rows -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/w_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/widget_bg"
+    android:padding="4dp">
+
+    <ListView
+        android:id="@+id/w_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:scrollbars="none"
+        android:cacheColorHint="#00000000" />
+
+    <TextView
+        android:id="@+id/w_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text=""
+        android:textColor="#9C96B3"
+        android:textSize="11sp"
+        android:visibility="gone" />
+</LinearLayout>

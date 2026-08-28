@@ -1,0 +1,24 @@
+{
+  "name": "aster",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ASTER — a cozy personal memory + productivity + progress system. Local-first, zero dependencies.",
+  "author": "Sarv",
+  "type": "module",
+  "main": "desktop/main.js",
+  "scripts": {
+    "start": "node serve.mjs",
+    "start:phone": "node serve.mjs --lan",
+    "electron:dev": "electron .",
+    "icons": "electron scripts/gen-icons.mjs",
+    "toolchain": "node scripts/setup-toolchain.mjs",
+    "build:exe": "node scripts/build-exe.mjs",
+    "build:exe-full": "electron-builder --win portable",
+    "build:apk": "node scripts/build-android.mjs",
+    "build": "npm run build:exe && npm run build:apk"
+  },
+  "devDependencies": {
+    "electron": "^43.4.1",
+    "electron-builder": "^26.15.3"
+  }
+}

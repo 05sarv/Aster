@@ -1,0 +1,16 @@
+appId: app.aster.desktop
+productName: ASTER
+directories:
+  output: releases
+files:
+  - desktop/**
+  - index.html
+  - src/**
+  - styles/**
+asar: true
+compression: normal
+win:
+  target: portable
+  icon: build/icon.png
+portable:
+  artifactName: ASTER.exe

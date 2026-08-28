@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 1x1 tile: the sparkle + a tiny count underneath -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/w_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/widget_bg"
+    android:padding="2dp">
+
+    <TextView
+        android:id="@+id/t_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="✦"
+        android:textColor="#F7B7CF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/t_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textColor="#9C96B3"
+        android:textSize="9sp"
+        android:maxLines="1" />
+</LinearLayout>

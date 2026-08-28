@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- one row inside a list widget: ◯ = act on it, text = open it -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/w_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:id="@+id/r_icon"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:minHeight="16dp"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:textColor="#F7B7CF" />
+
+    <TextView
+        android:id="@+id/r_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textSize="12sp"
+        android:textColor="#EFEBF6"
+        android:maxLines="1"
+        android:ellipsize="end" />
+</LinearLayout>
