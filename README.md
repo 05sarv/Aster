@@ -4,7 +4,7 @@
 
 > remember · do · grow
 
-ASTER is a single-page web app where every part of your life can live together: memories of people and places, tasks with gentle reminders, custom "Spaces" for anything you're growing (gym, guitar, finance, travel…), progress metrics and goals — all linkable, all yours, all on your device.
+ASTER is a single-page web app where a part of your life can live together: memories of people and places, tasks with gentle reminders, custom "Spaces" for anything you're growing (gym, guitar, finance, travel…), progress metrics and goals —  all yours, all on your device.
 
 ---
 
